@@ -3,9 +3,7 @@
 Script: bronze_load_procedure.sql
 Layer: Bronze
 Purpose:
-    This script creates or updates the stored procedure 
-    'bronze.load_bronze' which loads raw data from CSV files 
-    into the Bronze layer tables of the Data Warehouse.
+    This script creates or updates the stored procedure 'bronze.load_bronze' which loads raw data from CSV files into the Bronze layer tables of the Data Warehouse.
 
 Description:
     - Truncates existing data in Bronze tables
@@ -17,8 +15,7 @@ WARNING:
     - This script will TRUNCATE all tables in the Bronze layer.
     - All existing data in these tables will be permanently deleted.
     - Ensure the source file paths are correct before executing.
-    - Verify that the SQL Server service account has permission
-      to access the source file directories.
+    - Verify that the SQL Server service account has permission to access the source file directories.
 
 Execution:
     After creating the procedure, run:
